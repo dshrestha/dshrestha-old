@@ -49,3 +49,15 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## You might run into issues when running ember server. General errors and how I fixed them :
+
+* cannot find module 'node_modules\broccoli-ember-hbs-template-compiler'
+	* `npm install`
+	* `bower install`
+
+* cannot find module 'ember-cli/lib/broccoli/ember-app'
+	* `npm install ember-cli --save`
+
+* to update to latest version of ember data availble (http://stackoverflow.com/questions/25869180/how-to-update-ember-cli-app-to-ember-data-1-0-0-beta9)	
+	* `npm uninstall ember-cli-ember-data --save-dev`
+	* `npm install ember-data --save-dev`

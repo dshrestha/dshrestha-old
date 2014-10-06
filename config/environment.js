@@ -4,7 +4,7 @@ module.exports = function(environment) {
         modulePrefix: 'dshrestha',
         environment: environment,
         baseURL: '/',
-        host: 'http://localhost/dshrestha-server/index.php',
+        host: 'http://localhost:8085/dshrestha-server/index.php',
         locationType: 'auto',
         EmberENV: {
             FEATURES: {
