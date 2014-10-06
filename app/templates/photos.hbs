@@ -1,0 +1,6 @@
+<div class="gallery-thumbs clearfix">
+    {{#each}}
+    <img src="assets/albums/{{unbound album.name}}/THUMBS/{{unbound source}}" {{action "viewPhoto" this}} class="simple-border-1 pointer-cursor float-left"/>
+    {{/each}}
+</div>
+{{outlet}}

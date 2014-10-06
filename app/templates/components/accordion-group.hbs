@@ -1,0 +1,7 @@
+<div class="accordion-heading pointer-cursor clearfix" {{action 'toggleExpand'}}>
+	<div class="float-left space-right-xsm"><img src="assets/images/chevron-down-16.png" {{bind-attr class="expanded::flip-image-hor"}} /> </div>
+	<div class="float-left">{{title}}</div>
+</div>
+<div class="accordion-body hide">
+    {{yield}}
+</div>

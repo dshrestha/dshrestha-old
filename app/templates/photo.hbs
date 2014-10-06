@@ -1,0 +1,8 @@
+<div class="gallery-gamma-overlay"></div>
+<div class="gallery-single-view">
+    <img src="assets/images/right.png" {{bind-attr class=":nav-next hasNext::hide"}} {{action 'showNext'}} />
+    <img src="assets/images/left.png" {{bind-attr class=":nav-previous hasPrevious::hide"}} {{action 'showPrevious'}} />
+    <img src="assets/images/cross.png" class="nav-close" {{action 'exitFullScreenMode'}} />
+    <img id="album-photo" {{bind-attr src="photoSource"}} />
+    <img src="assets/images/loading.gif" {{bind-attr class=":loader-spinner view.imageLoaded:hide"}}/>    
+</div>

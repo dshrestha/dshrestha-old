@@ -1,0 +1,547 @@
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Georgia', trebuchet ms, arial, sans-serif;
+    font-size: 12pt;
+    color: #555;
+    background-color: #FEFEFE;
+    overflow-y: scroll;
+    line-height: 1.8em;
+}
+p {
+    text-indent: 40px;
+}
+#container {
+    margin: 0px auto;
+    width: 95%;
+}
+a {
+    color: #3b8dbd;
+    text-decoration: none;
+    outline: 0;
+}
+.form-control {
+    line-height: 2em;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 6px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+textarea {
+    min-height: 200px;
+    font-family: 'Georgia', trebuchet ms, arial, sans-serif;
+}
+button.btn {
+    border: 0 none;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 7px 20px;
+    text-transform: none;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    text-align: center;
+}
+.btn.red {
+  background: none repeat scroll 0 0 #E0645C;
+  color: #FFFFFF;
+}
+.btn.red:hover {
+  background: none repeat scroll 0 0 #999999;
+  color: #FFFFFF;
+}
+.btn.dark {
+  background: none repeat scroll 0 0 #444444;
+  color: #FFFFFF;
+}
+.btn.dark:hover {
+  background: none repeat scroll 0 0 #2DB6CF;
+  color: #FFFFFF;
+}
+.btn.light {
+  background: none repeat scroll 0 0 #999999;
+  color: #FFFFFF;
+}
+.btn.light:hover {
+  background: none repeat scroll 0 0 #444444;
+  color: #FFFFFF;
+}
+.btn.green {
+  background: none repeat scroll 0 0 #46b98a;
+  color: #FFFFFF;
+}
+.btn.green:hover {
+  background: none repeat scroll 0 0 #444444;
+  color: #FFFFFF;
+}
+.btn.blue {
+  background: none repeat scroll 0 0 #2DB6CF;
+  color: #FFFFFF;
+}
+.btn.blue:hover {
+  background: none repeat scroll 0 0 #444444;
+  color: #FFFFFF;
+}
+/* TOP LOGO RELATED CSS CLASSES */
+
+.my-logo {
+    letter-spacing: 0.1em;
+    font: 1.8em"Fredericka the Great";
+    color: #FFF;
+    background-color: #EB8540;
+    border-radius: 0px 0px 6px 6px;
+    font-size: 2em;
+}
+.my-logo > div {
+    text-align: center;
+    float: left;
+}
+.my-logo div.d {
+    width: 40%;
+    background-color: #74A6BD;
+    border-radius: 0px 0px 6px 6px;
+    height: 10em;
+    line-height: 10em;
+}
+.my-logo div.g {
+    width: 25%;
+    background-color: #E9B64D;
+    border-radius: 0px 0px 6px 6px;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+.my-logo div.s {
+    width: 35%;
+    background-color: #90CA77;
+    border-radius: 0px 0px 6px 6px;
+    height: 4em;
+    line-height: 4em;
+}
+/* NAVIGATION BAR RELATED CLASSES */
+
+.nav-bar {
+    padding: 30px 0px 20px 0px;
+}
+.nav-bar div.horizontal-bar {
+    padding: 10px 0px;
+    border-bottom: 5px solid #AB988B;
+}
+.nav > li {
+    float: left;
+    list-style-type: none;
+}
+.nav > li > a {
+    text-decoration: none;
+    color: #7195A3;
+    height: 2em;
+    cursor: pointer;
+    font: 1.1em'colaborate-thinregular';
+    padding-right: 20px;
+}
+.nav > li > a:hover, .nav > li > a:focus, .nav > li > a.active {
+    color: #AB988B;
+}
+/* COMMON CSS CLASSES */
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+h1 {
+    color: #333;
+    text-transform: uppercase;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.4em;
+    font: 1.65em"Fredericka the Great", "serif";
+}
+h3 {
+    color: #333;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.4em;
+}
+h6 {
+    color: #333;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.4em;
+}
+.well {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin: 2px;
+    padding: 5px;
+}
+.well.green {
+    border: 2px solid #ADBF73;
+    background-color: #ADCF73;
+}
+.well.grey {
+    border: 2px solid #DDD;
+    background-color: #CCC;
+}
+.well.light-green {
+    border: 2px solid transparent;
+    background-color: #C8DB91;
+}
+.col-1 {
+    width: 10%;
+}
+.col-2 {
+    width: 20%;
+}
+.col-3 {
+    width: 30%;
+}
+.col-4 {
+    width: 40%;
+}
+.col-6 {
+    width: 60%;
+}
+.col-7 {
+    width: 70%;
+}
+.col-8 {
+    width: 80%;
+}
+.col-9 {
+    width: 90%;
+}
+.col-10 {
+    width: 100%;
+}
+.grey-dotted-border-left {
+    border-left: 1px dotted #FFF;
+}
+.grey-dotted-border-bottom {
+    border-bottom: 1px dashed #B2B2B2;
+}
+.white-dotted-border-bottom {
+    border-bottom: 1px dashed #F7F8F6;
+}
+.white-dotted-border-top {
+    border-top: 1px dashed #F7F8F6;
+}
+.space-right-sm {
+    padding-right: 10px;
+}
+.space-right-md {
+    padding-right: 15px;
+}
+.space-right-lg {
+    padding-right: 20px;
+}
+.space-right-xsm {
+    padding-right: 5px;
+}
+.space-left-sm {
+    padding-left: 10px;
+}
+.space-left-md {
+    padding-left: 15px;
+}
+.space-bottom-sm {
+    padding-bottom: 10px;
+}
+.space-bottom-md {
+    padding-bottom: 15px;
+}
+.space-top-sm {
+    padding-top: 10px;
+}
+.space-top-md {
+    padding-top: 15px;
+}
+.margin-bottom-md {
+    margin-bottom: 15px;
+}
+.hide {
+    display: none;
+    visibility: false;
+}
+a.plain {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dotted #555;
+}
+ul.list {
+    list-style-type: disc;
+}
+ul.list li {
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.pointer-cursor {
+    cursor: pointer;
+}
+.accordion-group {
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    margin: 2px;
+    padding: 5px;
+}
+.accordion-group .accordion-heading {
+    line-height: 1.8em;
+}
+.accordion-group .accordion-body {
+    border-top: 1px solid #f5f5f5;
+}
+.flip-image-hor {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+.fixed {
+    position: fixed;
+    top: 0px;
+}
+.center-text {
+    text-align: center;
+}
+img.simple-border-1 {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    padding: 5px;
+    background-color: #EFEECB;
+}
+/* CLASSS FOR DATE PANEL */
+
+.date-panel {
+    background: linear-gradient(top, #FDFDFD 0%, #F1F1F1 100%);
+    background: -moz-linear-gradient(top, #FDFDFD 0%, #F1F1F1 100%);
+    background: -webkit-linear-gradient(top, #FDFDFD 0%, #F1F1F1 100%);
+    border: 1px solid #E4E1D7;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 65px;
+    margin: 0 15px 25px 0;
+    padding: 9px 0 0;
+    width: 80px;
+}
+.date-panel p {
+    color: #999999;
+    font-family: Helvetica, Sans-Serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    text-indent: 0px;
+}
+.date-panel span {
+    background: linear-gradient(top, #335b77 0%, #223b4d 100%);
+    background: -moz-linear-gradient(top, #335b77 0%, #223b4d 100%);
+    background: -webkit-linear-gradient(top, #335b77 0%, #223b4d 100%);
+    border-radius: 0 0 5px 5px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0 0;
+    padding: 2px 0 0;
+    text-transform: uppercase;
+}
+/*CLASSES FOR BLOG POST*/
+
+.blog-post .title {
+    text-transform: capitalize;
+    font-size: 26px;
+    color: #7195A3;
+}
+.blog-post .category {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #EB8540;
+}
+.blog-post .content p {
+    padding-bottom: 10px;
+}
+.blog-post .code {
+    background-color: #C7E1BA;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #9CB770;
+    padding: 4px;
+    margin: 5px 0px;
+}
+/*CLASSES FOR GALLERY*/
+
+.gallery-thumbs img {
+    margin: 5px;
+}
+ul.gallery-albums li {
+    display: block;
+    cursor: pointer;
+    padding: 15px 0px 15px 25px;
+}
+ul.gallery-albums li:hover {
+    background-color: #CCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.gallery-gamma-overlay {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 9999;
+    display: block;
+}
+.gallery-single-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    text-align: center;
+}
+.gallery img.nav-next {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+}
+.gallery img.nav-previous {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    cursor: pointer;
+}
+.gallery img.loader-spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+.gallery img.nav-close {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.scrollable-albums {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.album-intro {
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+.album-intro hr {
+    width: 30%;
+}
+.album-intro h1 {
+    border-top: 5px solid #70ab8f;
+    position: relative;
+}
+.album-intro h1 span {
+    padding: 0 1.5em;
+    top: -0.775em;
+    background: none repeat scroll 0 0 #fff;
+    display: inline-block;
+    position: relative;
+}
+.drop-shadow {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.19);
+}
+.gallery-thumbs img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    /* For IE8 and earlier */
+}
+/*FORM CSS*/
+
+.form-container {
+    background: url("images/brushed_alu.png") repeat scroll 0 0 padding-box transparent;
+    border: 8px solid transparent;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+.form-container .row {
+    padding: 5px;
+}
+.form-err-messaage {
+    line-height: 1.5em;
+    color: lightcoral;
+}
+.footer {
+    border-top: 5px solid #70ab8f;
+    padding-top: 1em;
+    margin-top: 2em;
+}
+.image-64 {
+    width: 64px;
+    height: 64px;
+}
+/* LOAD WEB FONTS */
+
+@font-face {
+    font-family: 'colaborate-thinregular';
+    src: url('fonts/colaborate_thin_macroman/ColabThi-webfont.eot');
+    src: url('fonts/colaborate_thin_macroman/ColabThi-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/colaborate_thin_macroman/ColabThi-webfont.woff') format('woff'), url('fonts/colaborate_thin_macroman/ColabThi-webfont.ttf') format('truetype'), url('fonts/colaborate_thin_macroman/ColabThi-webfont.svg#colaborate-thinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Fredericka the Great";
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/fredericka_the_great/FrederickatheGreat-Regular.eot');
+    src: url('fonts/fredericka_the_great/FrederickatheGreat-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/fredericka_the_great/FrederickatheGreat-Regular.woff') format('woff'), url('fonts/fredericka_the_great/FrederickatheGreat-Regular.ttf') format('truetype'), url('fonts/fredericka_the_great/FrederickatheGreat-Regular.svg#fff_tusjbold') format('svg');
+}
+ul.plain-list li {
+    display: block;
+    cursor: pointer;
+    padding-left: 14px;
+    border-bottom: 1px solid #CCC;
+}
+ul.plain-list li:hover, ul.plain-list li.active {
+    font-weight: bold;
+}

@@ -1,0 +1,11 @@
+{{#each}}
+<div class="album-intro">
+    <h1 class="center-text"><span>{{formatted-date uploadDate "LL"}}</span></h1>
+    <div class="center-text"><h3>{{name}}</h3></div>
+    <div class="clearfix">
+        <div class="float-left" style="padding-right: 25px;"><img src="assets/albums/{{unbound name}}/THUMBS/{{unbound coverPhoto}}" class="drop-shadow" /></div>{{{description}}}
+    </div>
+    <button class="btn green col-10" {{action 'selectAlbum' this}}>Browse Album</button>
+</div>
+<br />
+{{/each}}

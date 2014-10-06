@@ -1,0 +1,22 @@
+<div class="well green">
+    <div class="clearfix">
+        <div class="float-left col-4">
+        	{{#each experiences}}
+				<div>{{title}} ({{formatted-date startDate "L"}} - {{#if endDate}}{{formatted-date endDate "L"}}{{else}}continuing{{/if}})</div>        
+        	{{/each}}
+            <div><a href="{{unbound company.website}}" target="_blank" class="plain">{{company.name}}</a></div>
+            <div>{{company.address_1}} {{company.address_2}} </div>
+            <div>{{company.city}}, {{company.state}} {{company.zip}}</div>
+            <div>{{company.country}}</div>
+        </div>
+        <div class="float-left col-6">
+            <div class="grey-dotted-border-left space-left-sm">
+                <p>{{company.description}}</p>
+            </div>
+        </div>
+    </div>	    			
+</div>
+<br />	
+{{#each projects}}
+    {{show-project projectBinding='this'}}
+{{/each}}

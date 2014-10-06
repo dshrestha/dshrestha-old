@@ -1,0 +1,10 @@
+{{#accordion-group titleBinding="project.displayName"}}
+    <h6 class="grey-dotted-border-bottom space-top-sm space-left-sm">Responsibilities</h6>
+    <ul class="list">
+        {{#each project.responsibilities}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <h6 class="grey-dotted-border-bottom space-top-md space-left-sm">Languages/Tools used</h6>
+    <div>{{languages}}</div>
+{{/accordion-group}}

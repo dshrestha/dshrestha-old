@@ -1,0 +1,15 @@
+<div class="clearfix">
+    <div class="col-3 float-left">
+        <h1 class="grey-dotted-border-bottom">Categories</h1>
+        <ul class="plain-list">
+            {{#each}}
+            {{#link-to 'blog-category' this tagName="li"}}{{name}} <div class="float-right">{{blogCount}}</div>{{/link-to}}
+            {{/each}}
+        </ul>
+    </div>
+    <div class="col-7 float-right">
+        <div class="space-left-md">
+            {{outlet}}
+        </div>
+    </div>
+</div>
