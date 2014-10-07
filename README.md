@@ -51,6 +51,12 @@ Specify what it takes to deploy your app.
 
 ## You might run into issues when running ember server. General errors and how I fixed them :
 
+* when quoting font names in css file always use double quotes (") instead of single quote (') because
+when the assets are compiled, it gets rid of single quotes making font names invalid in situation like these:
+	font: 1.1em'colaborate thinregular';//before compilation
+	font: 1.1emcolaborate thinregular;//after compilation
+
+
 * cannot find module 'node_modules\broccoli-ember-hbs-template-compiler'
 	* `npm install`
 	* `bower install`
