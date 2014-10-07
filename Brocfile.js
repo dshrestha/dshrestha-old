@@ -2,7 +2,11 @@
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+    fingerprint: {
+        enabled: false //disable fingerprint because timelinejs gets screwed up
+    }
+});
 
 app.import("bower_components/moment/moment.js");
 app.import("bower_components/ember-validations/index.js");
