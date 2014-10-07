@@ -420,6 +420,28 @@ ul.gallery-albums li:hover {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
+.block-ui {
+    background: #E5E5E5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 9999;
+    display: block;
+}
+.block-ui-info {
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    z-index: 10000;
+    text-align: center;
+    padding: 50px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
 .gallery-gamma-overlay {
     background: #000;
     position: fixed;

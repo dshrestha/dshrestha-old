@@ -1,7 +1,7 @@
-import Ember from "ember";
+import defaultRoute from "dshrestha/routes/default-route";
 
 export
-default Ember.Route.extend({
+default defaultRoute.extend({
 
     model: function() {
         return this.get('store').find('experience');
@@ -9,7 +9,8 @@ default Ember.Route.extend({
 
     afterModel: function() {
         //load all companies to the store
-        return this.get('store').find('company');
+        this._super();
+        return this.get('store').find('company');        
     },
 
     setupController: function(controller, model) {

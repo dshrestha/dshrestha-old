@@ -1,11 +1,17 @@
 <div id="container">
-	<div class="my-logo clearfix">
-		<div class="d">DEEWENDRA</div>
-		<div class="g">G.</div>
-		<div class="s">SHRESTHA</div>
-	</div>
-	{{view templateName="navigation-menu"}}
-	{{outlet}}
-	{{view templateName="footer"}}
+    <div class="my-logo clearfix">
+        <div class="d">DEEWENDRA</div>
+        <div class="g">G.</div>
+        <div class="s">SHRESTHA</div>
+    </div>
+    {{view templateName="navigation-menu"}}
+    {{outlet}}
+    {{view templateName="footer"}}
 </div>
-
+{{#if blockUI}}
+<div class="block-ui"></div>
+<div class="block-ui-info">
+    <h6>LOADING...</h6>
+    <img src="assets/images/gif-load.gif" />
+</div>
+{{/if}}
