@@ -65,44 +65,44 @@ button.btn {
     text-align: center;
 }
 .btn.red {
-  background: none repeat scroll 0 0 #E0645C;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #E0645C;
+    color: #FFFFFF;
 }
 .btn.red:hover {
-  background: none repeat scroll 0 0 #999999;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #999999;
+    color: #FFFFFF;
 }
 .btn.dark {
-  background: none repeat scroll 0 0 #444444;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
 }
 .btn.dark:hover {
-  background: none repeat scroll 0 0 #2DB6CF;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #2DB6CF;
+    color: #FFFFFF;
 }
 .btn.light {
-  background: none repeat scroll 0 0 #999999;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #999999;
+    color: #FFFFFF;
 }
 .btn.light:hover {
-  background: none repeat scroll 0 0 #444444;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
 }
 .btn.green {
-  background: none repeat scroll 0 0 #46b98a;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #46b98a;
+    color: #FFFFFF;
 }
 .btn.green:hover {
-  background: none repeat scroll 0 0 #444444;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
 }
 .btn.blue {
-  background: none repeat scroll 0 0 #2DB6CF;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #2DB6CF;
+    color: #FFFFFF;
 }
 .btn.blue:hover {
-  background: none repeat scroll 0 0 #444444;
-  color: #FFFFFF;
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
 }
 /* TOP LOGO RELATED CSS CLASSES */
 
@@ -157,7 +157,7 @@ button.btn {
     color: #7195A3;
     height: 2em;
     cursor: pointer;
-    font: 1.1em'colaborate-thinregular';
+    font: 1.1em"colaborate thinregular";
     padding-right: 20px;
 }
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a.active {
@@ -520,10 +520,19 @@ ul.gallery-albums li:hover {
     width: 64px;
     height: 64px;
 }
+ul.plain-list li {
+    display: block;
+    cursor: pointer;
+    padding-left: 14px;
+    border-bottom: 1px solid #CCC;
+}
+ul.plain-list li:hover, ul.plain-list li.active {
+    font-weight: bold;
+}
 /* LOAD WEB FONTS */
 
 @font-face {
-    font-family: 'colaborate-thinregular';
+    font-family: 'colaborate thinregular';
     src: url('fonts/colaborate_thin_macroman/ColabThi-webfont.eot');
     src: url('fonts/colaborate_thin_macroman/ColabThi-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/colaborate_thin_macroman/ColabThi-webfont.woff') format('woff'), url('fonts/colaborate_thin_macroman/ColabThi-webfont.ttf') format('truetype'), url('fonts/colaborate_thin_macroman/ColabThi-webfont.svg#colaborate-thinregular') format('svg');
     font-weight: normal;
@@ -535,13 +544,4 @@ ul.gallery-albums li:hover {
     font-weight: normal;
     src: url('fonts/fredericka_the_great/FrederickatheGreat-Regular.eot');
     src: url('fonts/fredericka_the_great/FrederickatheGreat-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/fredericka_the_great/FrederickatheGreat-Regular.woff') format('woff'), url('fonts/fredericka_the_great/FrederickatheGreat-Regular.ttf') format('truetype'), url('fonts/fredericka_the_great/FrederickatheGreat-Regular.svg#fff_tusjbold') format('svg');
-}
-ul.plain-list li {
-    display: block;
-    cursor: pointer;
-    padding-left: 14px;
-    border-bottom: 1px solid #CCC;
-}
-ul.plain-list li:hover, ul.plain-list li.active {
-    font-weight: bold;
 }
