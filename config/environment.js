@@ -35,9 +35,11 @@ module.exports = function(environment) {
     }
     if (environment === 'production') {
         ENV.baseURL = 'dshrestha';
-        ENV.host = 'http://www.newapassa.com/dshrestha-server/index.php';
-        //ENV.baseURL = 'dshrestha';
-        //ENV.host = 'http://localhost:8085/dshrestha-server/index.php';
+        ENV.host = 'http://www.newapassa.com/dshrestha-server/index.php';        
+    }
+    if (environment === 'local') {
+        ENV.baseURL = 'dshrestha';
+        ENV.host = 'http://localhost:8085/dshrestha-server/index.php';
     }
     return ENV;
 };
