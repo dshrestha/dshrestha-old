@@ -3,8 +3,6 @@ import Ember from "ember";
 export
 default Ember.Component.extend({
 
-    layout: Ember.Handlebars.compile('<div id="timeline-overview"></div>'),
-    
     didInsertElement: function() {
         var today = new Date(),
             startDate = null,
@@ -122,7 +120,7 @@ default Ember.Component.extend({
             height: '600',
             source: sourceData,
             embed_id: 'timeline-overview',
-            embed_path: 'libs/timeline/'
+            embed_path: '/libs/timeline/'
         });
 
     }   
