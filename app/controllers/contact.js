@@ -62,7 +62,7 @@ default Ember.ObjectController.extend(Ember.Validations.Mixin, {
             this.get('validationErrors').clear();
             if (this.get('isValid')) {
                 Ember.$.ajax({
-                    url: 'http://localhost:8085/newapassa-server/index.php/newapassa/sendFeedback',
+                    url: config.host+'/newapassa/sendFeedback',
                     type: 'POST',
                     data: {
                         'name': self.get('name'),

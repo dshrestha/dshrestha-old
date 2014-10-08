@@ -519,11 +519,12 @@ ul.gallery-albums li:hover {
     /* For IE8 and earlier */
 }
 /*FORM CSS*/
-
-.form-container {
-    background: url("images/brushed_alu.png") repeat scroll 0 0 padding-box transparent;
+.form-container-outer {
     border: 8px solid transparent;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);    
+}
+.form-container {
+    background: url("images/brushed_alu.png") repeat scroll 0 0 padding-box transparent;    
     padding: 20px;
 }
 .form-container .row {

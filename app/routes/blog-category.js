@@ -1,7 +1,7 @@
-import Ember from "ember";
+import defaultRoute from "dshrestha/routes/default-route";
 
 export
-default Ember.Route.extend({
+default defaultRoute.extend({
 
     model: function(params) {
         return this.get('store').find('blog-category', params.category_id);
