@@ -337,6 +337,9 @@ ul.list li {
 .center-text {
     text-align: center;
 }
+.right-text {
+    text-align: right;
+}
 img.simple-border-1 {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
