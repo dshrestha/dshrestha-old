@@ -1,18 +1,14 @@
 import Ember from "ember";
 import config from './../config/environment';
+import EmberValidations from "./../mixins/ember-validations";
 export
-default Ember.ObjectController.extend(Ember.Validations.Mixin, {
+default Ember.ObjectController.extend(EmberValidations, {
     name: null,
     email: null,
     message: null,
     captcha: null,
-    validationErrors: null,
     captchaPath: config.host+'/captcha',
 
-    init: function() {
-        this.set('validationErrors', []);
-        this._super();
-    },
     clearFormFields: function() {
         this.setProperties({
             'name': null,
@@ -82,9 +78,7 @@ default Ember.ObjectController.extend(Ember.Validations.Mixin, {
                     });
                 });
             } else {
-                Ember.keys(this.get('errors')).forEach(function(field) {
-                    this.get('validationErrors').set(field, Ember.$.extend(true, [], this.get('errors').get(field)));
-                }.bind(this));
+                this.populateValidationErrors();
             }
         }
     }

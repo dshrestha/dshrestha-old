@@ -50,7 +50,7 @@ default Ember.ObjectController.extend(EmberValidations, {
                     }
                 });
             } else {
-                this.populateErrors();
+                this.populateValidationErrors();
             }
         }
     }
