@@ -3,11 +3,11 @@
     <div class="form-container">
         <div class="row clearfix">
             <div class="col-3 float-left right-text"><span class="space-right-sm">User name :</span></div>
-            <div class="col-7 float-left">{{input class="form-control" value=username}}</div>
+            <div class="col-7 float-left">{{input class="form-control" value=username}} <span class="form-err-messaage">{{validationErrors.username}}</span></div>
         </div>
         <div class="row clearfix">
             <div class="col-3 float-left right-text"><span class="space-right-sm">Password :</span></div>
-            <div class="col-7 float-left">{{input type="password" class="form-control" value=password}}</div>
+            <div class="col-7 float-left">{{input type="password" class="form-control" value=password}} <span class="form-err-messaage">{{validationErrors.password}}</span></div>
         </div>
         <div class="row clearfix">
             <div class="col-3 float-left">&nbsp;</div>
